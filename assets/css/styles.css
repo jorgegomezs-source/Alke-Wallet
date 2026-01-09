@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #6a1b9a;
+    --secondary-color: #4a148c;
+    --accent-color: #ab47bc;
+    --text-color: #333;
+    --light-bg: rgba(255, 255, 255, 0.95);
+    --dark-bg: #1a1a1a;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+/* Background & Container */
+.bg-image-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/fondo\ purpura.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.container-lg {
+    max-width: 1200px;
+}
+
+/* Navbar Enhancements */
+.navbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-brand span {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Cards & Content Areas */
+.bg-secondary {
+    background-color: rgba(255, 255, 255, 0.9) !important; /* Semi-transparent white instead of gray */
+    color: var(--text-color) !important;
+    backdrop-filter: blur(5px);
+}
+
+.container.text-dark.bg-light, 
+h3.container {
+    background-color: #fff !important;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+h1, h2, h3, .display-5, .display-6 {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.text-white {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    box-shadow: 0 4px 15px rgba(106, 27, 154, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(106, 27, 154, 0.6);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    box-shadow: 0 4px 10px rgba(108, 117, 125, 0.4);
+}
+
+.btn-warning {
+    color: #fff;
+    background: linear-gradient(45deg, #ffca28, #ff6f00);
+    box-shadow: 0 4px 15px rgba(255, 111, 0, 0.4);
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(171, 71, 188, 0.25);
+}
+
+/* List Groups (Transactions & Contacts) */
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 15px 20px;
+    transition: background-color 0.2s;
+    cursor: pointer; /* Kept from previous functionality */
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.list-group-item.active {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 10px rgba(106, 27, 154, 0.3);
+}
+
+/* Modals */
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: none;
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+/* Footer & Misc */
+footer {
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="icon"
+      href="/assets/img/logo billetera.png"
+      type="image/x-icon"
+    />
+    <title>deposito</title>
+  </head>
+
+  <body class="bg-image-container">
+    <!--Un encabezado destacado; navbar-->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark flex-fill">
+      <div class="container">
+        <a href="menu.html" class="navbar-brand">
+          <img
+            src="/assets/img/logo billetera.png"
+            alt="Logo"
+            width="60"
+            height="45"
+            class="d-inline-block align-middle me-2 border border-light rounded"
+          />
+          <span class="fw-bold text-tertiary display-5 fw-lighter align-middle"
+            >Billetera Digital</span
+          >
+          <div>
+            <span class="fw-lighter">
+              <p class="text-md-end">Tu dinero a un click</p>
+            </span>
+          </div>
+          <!--mensaje descriptivo-->
+        </a>
+        <!--toggle button for mobile nav aria controls RECOMENDADO PARA SCREEN READER-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle-navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--links de la natbar y cierre de la natbar-->
+
+        <div
+          class="collapse navbar-collapse justify-content-end align-center text-align"
+          id="main-nav"
+        >
+          <ul class="navbar-nav fw-bold">
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="transactions.html"
+                >Historial de transacciones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sendmoney.html">Enviar dinero</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link" href="deposit.html">Depositar</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a class="btn btn-secondary" href="deposit.html">Depositar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-lg">
+      <div class="row justify-content-center align-items-center mt-5 p-5">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <h2 class="display-5 p-1 text-white">Depositar</h2>
+          <p class="text-white mb-3">
+            Saldo actual: <strong id="currentBalance">$0</strong>
+          </p>
+          <div id="alert-container" class="mb-3"></div>
+          <form id="depositForm">
+            <div class="form-group pt-1 pb-1">
+              <label for="depositAmount" class="h3 mt-2 text-white"
+                >Monto a depositar:</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="depositAmount"
+                placeholder="Ingrese monto"
+              />
+              <div class="form-text text-white">
+                Saldo actual: <span id="depositCurrentBalance">$0</span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">
+              Realizar depósito
+            </button>
+          </form>
+          <p
+            id="depositSuccessLegend"
+            class="text-success mt-3"
+            style="display: none"
+          >
+            Has depositado: <strong id="depositedAmount">$0</strong>
+          </p>
+          <a href="menu.html" class="btn btn-secondary mt-2"
+            >Volver al Menú Principal</a
+          >
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/scriptdeposit.js"></script>
+  </body>
+</html>

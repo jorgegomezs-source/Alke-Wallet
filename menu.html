@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link
+      rel="icon"
+      href="/assets/img/logo billetera.png"
+      type="image/x-icon"
+    />
+    <title>Menu principal</title>
+  </head>
+  <body class="bg-image-container">
+    
+    <!--Un encabezado destacado; navbar-->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark flex-fill">
+      <div class="container">
+        <a href="#intro" class="navbar-brand">
+          <img src="/assets/img/logo billetera.png" alt="Logo" width="60" height="45" class="d-inline-block align-middle me-2 border border-light rounded">
+          <span class="fw-bold text-tertiary display-5 fw-lighter align-middle">Billetera Digital</span>
+          <div>
+            <span class="fw-lighter">
+              <p class="text-md-end">Tu dinero a un click</p>
+            </span>
+          </div>
+          <!--mensaje descriptivo-->
+        </a>
+        <!--toggle button for mobile nav aria controls RECOMENDADO PARA SCREEN READER-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle-navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--links de la natbar y cierre de la natbar-->
+
+        <div
+          class="collapse navbar-collapse justify-content-end align-center text-align"
+          id="main-nav"
+        >
+          <ul class="navbar-nav fw-bold">
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <!--onclick agrega mensaje al hacer click en el link-->
+              <a class="nav-link" href="transactions.html" onclick="return MensajeMovimientos()">Historial de transacciones</a>
+            </li>
+            <li class="nav-item">
+              <!--onclick agrega mensaje al hacer click en el link-->
+              <a class="nav-link" href="sendmoney.html" onclick="return MensajeEnviar()">Enviar dinero</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <!--onclick agrega mensaje al hacer click en el link-->
+              <a class="nav-link" href="deposit.html" onclick="return MensajeDepositar()">Depositar</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <!--onclick agrega mensaje al hacer click en el link-->
+              <a class="btn btn-secondary" href="deposit.html" onclick="return MensajeDepositar()">Depositar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--uso de grillas-->
+
+    <!--grilla de botones del menu principal-->
+
+    <section id="pricing">
+      <div class="container-lg">
+        <div class="row justify-content-start align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+            <div class="display-2 text-white font-bold p-2">Menú principal</div>
+                <div class="container">
+                <div class="form-group">
+                 <label for="balance" class="text-white p-2">Dinero en cuenta:</label>
+                 <h3 id="accountBalance" class="container text-dark bg-light rounded border border-dark p-2">$60000</h3>
+                </div>
+                <a href="deposit.html" class="btn btn-primary btn-lg btn-block shadow-lg border-light mt-2" onclick="return MensajeDepositar()">Depositar</a>
+                <a href="sendmoney.html" class="btn btn-warning btn-lg btn-block shadow-lg border-light mt-2" onclick="return MensajeEnviar()">Enviar Dinero</a>
+                <a href="transactions.html" class="btn btn-secondary btn-lg btn-block shadow-lg border-light mt-2" onclick="return MensajeMovimientos()">Movimientos</a>
+                </div>
+              
+            
+          </div>
+          <!-- class "d-none"= no image small screen; "d-md-block"=block md screen -->
+          <div class="col-md-5 text-center d-none d-md-block">
+            <img class="img-fluid" src="/assets/img/billetera acciones.png" alt="handshake" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous">
+      </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/scriptmenu.js"></script>
+  </body>
+</html>
