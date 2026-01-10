@@ -103,11 +103,13 @@
           <input type="hidden" id="selectedContactHidden">
       </div>
       <!-- Button to toggle the inline add-contact form -->
-      <button type="button"
+    <button type="button"
         class="btn btn-primary"
         id="openSendMoneyModalBtn"
-        disabled>Enviar dinero
-      </button>
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal2">
+  Enviar dinero
+</button>
 
       <!-- Inline Add Contact Form (hidden by default) -->
       <div id="addContactInline" class="card bg-light p-3 my-3" style="display:none;">
