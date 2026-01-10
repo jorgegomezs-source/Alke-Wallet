@@ -12,20 +12,23 @@ Modifica sendmoney.html; scriptsendmoney.js; styles.css -- Funciona autocompleta
 
 10-01-2025
 Modifica boton que abre el modal boton de enviar dinero funcional
-Original
 
-<!--<button type="button"
-        class="btn btn-primary"
-        id="openSendMoneyModalBtn"
-        disabled>
-  Enviar dinero
-</button>>
+button type="button"
+class="btn btn-primary"
+id="openSendMoneyModalBtn"
+disabled>
+Enviar dinero
+button
 
 Modificado
-<!--<button type="button"
-        class="btn btn-primary"
-        id="openSendMoneyModalBtn"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal2">
-  Enviar dinero
-</button>
+button type="button"
+class="btn btn-primary"
+id="openSendMoneyModalBtn"
+data-bs-toggle="modal"
+data-bs-target="#exampleModal2">
+Enviar dinero
+button
+
+10-01-2025
+
+Fusiona branch con main
