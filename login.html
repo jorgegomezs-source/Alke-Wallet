@@ -66,9 +66,19 @@
                   No compartiremos tu correo electrónico con nadie más.
                 </div>
               </div>
+              <!-- Password Input con mostrar/ocultar -->
               <div class="mb-3">
                 <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" />
+                <div class="input-group">
+                  <input type="password" class="form-control" id="password" />
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="togglePwd"
+                  >
+                    <i class="bi bi-eye" id="eyeIcon"></i>
+                  </button>
+                </div>
               </div>
               <div class="mb-3 form-check">
                 <input
