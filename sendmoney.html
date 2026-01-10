@@ -90,12 +90,23 @@
     <p class="text-white mb-3">Saldo actual: <strong id="currentBalance">$0</strong></p>
     <form>
       <div class="form-group">
+      <!-- reemplaza el <input type="text" class="form-control" id="searchContact" placeholder="Search contact"> -->
         <label class="text-white" for="searchContact">Buscar en la agenda de transferencias:</label>
-        <input type="text" class="form-control" id="searchContact" placeholder="Search contact">
+        <input type="text"
+          class="form-control"
+          id="searchContact"
+          placeholder="Escriba para buscar..."
+          list="contactOptions"
+          autocomplete="off">
+          <datalist id="contactOptions"></datalist>
+          <!-- añade un campo oculto que guardará el contacto elegido-->
+          <input type="hidden" id="selectedContactHidden">
       </div>
       <!-- Button to toggle the inline add-contact form -->
-      <button type="button" class="btn btn-primary" id="toggleAddContactBtn">
-      Agregar nuevo contacto
+      <button type="button"
+        class="btn btn-primary"
+        id="openSendMoneyModalBtn"
+        disabled>Enviar dinero
       </button>
 
       <!-- Inline Add Contact Form (hidden by default) -->
@@ -172,14 +183,20 @@
     <ul id="contactList" class="list-group">
     <li class="list-group-item">
       <div class="contact-info">
-        <span class="contact-name">John Doe</span>
-        <span class="contact-details">CBU: 123456789, Alias: john.doe, Banco: ABC Bank</span>
+        <span class="contact-name">Mario Valenzuela</span>
+        <span class="contact-details">CBU: 123456789, Alias: Marito, Banco: ABC Bank</span>
       </div>
     </li>
     <li class="list-group-item">
       <div class="contact-info">
-        <span class="contact-name">Jane Smith</span>
-        <span class="contact-details">CBU: 987654321, Alias: jane.smith, Banco: XYZ Bank</span>
+        <span class="contact-name">Angélica Rodriguez</span>
+        <span class="contact-details">CBU: 987654321, Alias: Mery, Banco: XYZ Bank</span>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="contact-info">
+        <span class="contact-name">Antonio Vasquez</span>
+        <span class="contact-details">CBU: 787654323, Alias: Toñito, Banco: XYZ Bank</span>
       </div>
     </li>
     <!-- Modal Enviar Dinero -->
