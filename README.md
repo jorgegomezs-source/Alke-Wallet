@@ -33,3 +33,7 @@ button
 
 Fusiona branch con main
 Go for merge
+
+10-01-2025
+Crea new branch feature/invitar
+Modifica login.html y script.js agrega opción "mostrar contraseña"
