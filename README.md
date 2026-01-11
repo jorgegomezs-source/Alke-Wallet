@@ -37,3 +37,8 @@ Go for merge
 10-01-2025
 Crea new branch feature/invitar
 Modifica login.html y script.js agrega opción "mostrar contraseña"
+
+10-01-2025
+Renombra login.html a index.html
+No requiere otros cambios
+Sitio funciona
