@@ -42,3 +42,6 @@ Modifica login.html y script.js agrega opción "mostrar contraseña"
 Renombra login.html a index.html
 No requiere otros cambios
 Sitio funciona
+
+10-01-2025
+Renombre herf de imagenes from /assets... to assets... para que la página de GitHub las muestre
