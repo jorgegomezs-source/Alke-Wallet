@@ -34,4 +34,18 @@ $(document).ready(function () {
   });
 });
 
+/* ===== Mostrar / ocultar contraseña ===== */
+$('#togglePwd').on('click', function () {
+  const $input = $('#password');
+  const $icon  = $('#eyeIcon');
+
+  if ($input.attr('type') === 'password') {
+    $input.attr('type', 'text');
+    $icon.removeClass('bi-eye').addClass('bi-eye-slash');
+  } else {
+    $input.attr('type', 'password');
+    $icon.removeClass('bi-eye-slash').addClass('bi-eye');
+  }
+});
+
 
