@@ -166,3 +166,8 @@ footer {
     padding: 20px 0;
     margin-top: 50px;
 }
+
+/* opcional: ancho igual que el input */
+#contactOptions{
+width: 100%;
+}
