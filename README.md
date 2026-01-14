@@ -60,3 +60,8 @@ Robustez: Corregida recursión en addContactToList, añadidos chequeos defensivo
 UI: Eliminado el formulario inline; la adición se hace via modal exclusivamente.
 Flujo de envío: Integración con saldo y transacciones existente — al enviar se actualiza balance y se guarda la transacción.
 Prueba recomendada: abrir sendmoney.html, usar “Agregar contacto”, verificar que el contacto aparece primero en la lista, que queda seleccionado y que persiste tras recargar.
+
+14-02-2025
+
+14-01-2026
+Plan: fusionar branch `user/invitar` en `main`.
